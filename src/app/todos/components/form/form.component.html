@@ -1,0 +1,71 @@
+<body class="formbody">
+<div class="container">
+    <div class="Form login-form">
+        <h2>Login</h2>
+        <form action="#">
+            <div class="input-box">
+                <i class='bx bxs-user'></i>
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Digite seu nome*">
+                
+                
+            </div>
+            <div class="input-box">
+                <i class='bx bxs-envelope' ></i>
+                <input type="text" placeholder="Dite sua senha*">
+                <label for="#">Senha</label>
+                
+            </div>
+            <div class="forgot-section">
+                <span><a href="#">Esqueceu sua senha?</a></span>
+            </div>
+            <button class="btn">Login</button>
+        </form>
+        <p class="RegisteBtn RegiBtn">Não tem uma conta? <a href="#">Cadastra-se</a></p>
+    </div>
+    <div class="Form Register-form">
+        <h2>Cadastra-se</h2>
+        <form action="#">
+            <div class="input-box">
+                <i class='bx bxs-user'></i>
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Digite seu nome*">
+                
+                
+            </div>
+            <div class="input-box">
+                <i class='bx bxs-envelope' ></i>
+                <input type="text" placeholder="Digite sua senha*">
+                <label for="#">Senha</label>
+            </div>
+            <div class="input-box">
+                <i class='bx bxs-envelope' ></i>
+                <input type="text" placeholder="Confirme sua senha*">
+                <label for="#">Confirme a Senha</label>
+            </div>
+            <div class="forgot-section">
+               <span><a href="#">Esqueceu sua Senha?</a></span>
+            </div>
+            <button class="btn" class="loginBtn">Cadastrar</button>
+        </form>
+        <p class="LoginBtn">Já tem uma conta? <a href="#">Faça o Login</a></p>
+    </div>
+
+    <script>
+        const container=document.querySelector(".container") ;
+        const loginForm=document.querySelector('.login-form')
+        const RegisterForm=document.querySelector('.Register-form');
+        const RegiBtn=document.querySelector('.RegiBtn');
+        const LoginBtn=document.querySelector('.LoginBtn');
+        RegiBtn.addEventListener('click',()=>{
+            RegisterForm.classList.add('active');
+            loginForm.classList.add('active')
+        })
+        LoginBtn.addEventListener('click',()=>{
+            RegisterForm.classList.remove('active');
+            loginForm.classList.remove('active')
+        })
+        </script>
+</div> 
+</body>
+

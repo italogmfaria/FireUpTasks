@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "projetoAngular": {
+    "FireUpTasks": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/projeto-angular",
+            "outputPath": "dist/fire-up-tasks",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "projetoAngular:build:production"
+              "browserTarget": "FireUpTasks:build:production"
             },
             "development": {
-              "browserTarget": "projetoAngular:build:development"
+              "browserTarget": "FireUpTasks:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "projetoAngular:build"
+            "browserTarget": "FireUpTasks:build"
           }
         },
         "test": {
@@ -96,6 +96,6 @@
     }
   },
   "cli": {
-    "analytics": "e2b40275-e1c8-4fe6-93d8-703243647a2a"
+    "analytics": "a565e021-83bf-4138-a701-283487c4d034"
   }
 }
