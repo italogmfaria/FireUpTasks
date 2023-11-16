@@ -17,11 +17,11 @@
                 
             </div>
             <div class="forgot-section">
-                <span><a href="#">Esqueceu sua senha?</a></span>
+                <span><a routerLink="#esqueceu">Esqueceu sua senha?</a></span>
             </div>
-            <button class="btn">Login</button>
+            <a routerLink="/main"><button class="btn">Login</button></a>
         </form>
-        <p class="RegisteBtn RegiBtn">Não tem uma conta? <a href="#">Cadastra-se</a></p>
+        <p class="RegisteBtn RegiBtn">Não tem uma conta? <a routerLink="#cadastrar">Cadastra-se</a></p>
     </div>
     <div class="Form Register-form">
         <h2>Cadastra-se</h2>
@@ -44,28 +44,12 @@
                 <label for="#">Confirme a Senha</label>
             </div>
             <div class="forgot-section">
-               <span><a href="#">Esqueceu sua Senha?</a></span>
+               <span><a routerLink="#esqueceu">Esqueceu sua Senha?</a></span>
             </div>
-            <button class="btn" class="loginBtn">Cadastrar</button>
+            <a routerLink="/form"><button class="btn" id="loginBtn">Cadastrar</button></a>
         </form>
-        <p class="LoginBtn">Já tem uma conta? <a href="#">Faça o Login</a></p>
+        <p class="LoginBtn">Já tem uma conta? <a routerLink="#cadastrar">Faça o Login</a></p>
     </div>
-
-    <script>
-        const container=document.querySelector(".container") ;
-        const loginForm=document.querySelector('.login-form')
-        const RegisterForm=document.querySelector('.Register-form');
-        const RegiBtn=document.querySelector('.RegiBtn');
-        const LoginBtn=document.querySelector('.LoginBtn');
-        RegiBtn.addEventListener('click',()=>{
-            RegisterForm.classList.add('active');
-            loginForm.classList.add('active')
-        })
-        LoginBtn.addEventListener('click',()=>{
-            RegisterForm.classList.remove('active');
-            loginForm.classList.remove('active')
-        })
-        </script>
 </div> 
 </body>
 

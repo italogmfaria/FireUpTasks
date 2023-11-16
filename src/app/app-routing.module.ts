@@ -6,7 +6,7 @@ import { TodosComponent } from './todos/components/to-do/todos.component';
 
 
 const routes: Routes = [
-  {path: 'home',component: HomeComponent},
+  {path: '',component: HomeComponent},
   {path: 'form',component: FormComponent},
   {path: 'main',component: TodosComponent}
 ];

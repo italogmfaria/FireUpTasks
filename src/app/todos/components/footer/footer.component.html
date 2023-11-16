@@ -1,36 +1,39 @@
-<footer class="footer" [ngClass]="{ hidden: noTodosClass$ | async }">
-  <span class="todo-count">
-    <strong>{{ activeCount$ | async }}</strong>
-    {{ itemsLeftText$ | async }}
-  </span>
-  <ul class="filters">
-    <li>
-      <a
+<body class="main">
+
+  <footer class="footer" [ngClass]="{ hidden: noTodosClass$ | async }">
+    <span class="todo-count">
+      <strong>{{ activeCount$ | async }}</strong>
+      {{ itemsLeftText$ | async }}
+    </span>
+    <ul class="filters">
+      <li>
+        <a
         href="/"
         [ngClass]="{ selected: (filter$ | async) === filterEnum.all }"
         (click)="changeFilter($event, filterEnum.all)"
-      >
+        >
         Tudo
       </a>
     </li>
     <li>
       <a
-        href="/"
-        [ngClass]="{ selected: (filter$ | async) === filterEnum.active }"
-        (click)="changeFilter($event, filterEnum.active)"
+      href="/"
+      [ngClass]="{ selected: (filter$ | async) === filterEnum.active }"
+      (click)="changeFilter($event, filterEnum.active)"
       >
-        Ativa
-      </a>
-    </li>
-
-    <li>
-      <a
-        href="/"
-        [ngClass]="{ selected: (filter$ | async) === filterEnum.completed }"
-        (click)="changeFilter($event, filterEnum.completed)"
+      Ativa
+    </a>
+  </li>
+  
+  <li>
+    <a
+    href="/"
+    [ngClass]="{ selected: (filter$ | async) === filterEnum.completed }"
+    (click)="changeFilter($event, filterEnum.completed)"
       >
-        Feitas
-      </a>
-    </li>
-  </ul>
+      Feitas
+    </a>
+  </li>
+</ul>
 </footer>
+</body>

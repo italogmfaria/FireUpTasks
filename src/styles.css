@@ -21,11 +21,9 @@ button {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-body {
+body .main {
 	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	line-height: 1.4em;
-    min-height: 100vh;
-    background: linear-gradient(45deg ,#ffffff,60% ,#f417de); 
 	color: #111111;
 	min-width: 230px;
 	max-width: 550px;
@@ -40,9 +38,19 @@ body .formbody{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+	background-image: url(src/assets/firepink.jpg);
     border: 100px;
-    border: 1px solid black;
-    border-radius: 10px;
+    border: 0px solid black;
+    border-radius: 0px;
+}
+
+body .home{
+	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	line-height: 1.4em;
+	color: #111111;
+	min-width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
 }
 
 .icon{

@@ -1,11 +1,15 @@
-<header class="header">
-  <h1>Fire Up Tasks</h1>
-  <input
+<body class="main">
+
+  <header class="header">
+    <h1>Fire Up Tasks</h1>
+    <input
     class="new-todo"
     placeholder="O que precisa ser feito?"
     autoFocus
     [value]="text"
     (keyup)="changeText($event)"
     (keyup.enter)="addTodo()"
-  />
-</header>
+    />
+  </header>
+  
+</body>

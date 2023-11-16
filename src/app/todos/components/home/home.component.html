@@ -1,1 +1,545 @@
-<a routerLink="/form"><p>home works!</p></a>
+<body class="home">
+<header class="header">
+    <!-- Logo -->
+    <a routerLink="#" class="logo"><img id="logo" src="assets/favicon.ico"></a>
+    <!-- Menu Hamburguer-->
+    <input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+    <!-- Menu -->
+    <nav class="nav">
+        <div class="menu">
+            <a routerLink="#">Funções</a>
+            <a routerLink="#">Detalhes</a>
+            <a href="#empresa">Contato</a>
+            <a routerLink="/form">Login e Cadastro</a>
+
+        </div>
+    </nav>
+</header>
+  <br>
+
+
+
+
+
+        <div class="section">
+            <div class="div-generic-wrapper">
+              <div class="heading-1-margin">
+                <div class="heading-1">
+                  <div class="domine-seu-trabalho-organize-sua-vida">
+                    Domine seu trabalho, organize sua vida
+                  </div>
+                </div>
+              </div>
+              <div class="p-margin">
+                <div class="p">
+                  <div
+                    class="lembre-se-de-tudo-e-enfrente-cada-projeto-com-suas-notas-tarefas-e-calend-rio-tudo-no-mesmo-lugar"
+                  >
+                    Lembre-se de tudo e enfrente cada
+                    tarefa e obstacúlo em um mesmo lugar.
+                  </div>
+                </div>
+              </div>
+              <div class="link-margin">
+                <div class="link">
+                  <a routerLink="/form">
+                    <button class="cadastre-se-gratuitamente">
+                      Cadastre-se Gratuitamente
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="span">
+                <div class="link-j-tem-uma-conta-entre">
+                  Já tem uma conta? <a routerLink="/form"> Entre</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="section">
+          <div class="div-container2">
+            <div class="div-w-full">
+              <img
+                class="_94-de-890-d-e-29-b-4997-b-91-e-da-67-b-7-fb-23-bb-task-hero-image-402-x-en-webp"
+                src="assets/tela.png"
+              />
+            </div>
+            <div class="div-margin">
+              <div class="div">
+                <div class="list">
+                  <div class="item">
+                    <div class="heading-6">
+                      <div class="trabalhe-de-qualquer-lugar">
+                        TRABALHE DE QUALQUER LUGAR
+                      </div>
+                    </div>
+                    <div class="p-font-normal">
+                      <div
+                        class="mantenha-as-informa-es-importantes-m-o-suas-notas-sincronizam-automaticamente-em-todos-os-seus-dispositivos"
+                      >
+                        Mantenha as informações<br />importantes à mão; suas
+                        notas<br />sincronizam automaticamente em<br />todos
+                        os seus dispositivos.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-margin">
+                    <div class="item2">
+                      <div class="heading-6-lembre-se-de-tudo">
+                        LEMBRE-SE DE TUDO
+                      </div>
+                      <div class="p-font-normal2">
+                        <div
+                          class="deixe-as-notas-mais-teis-ao-adicionar-texto-imagens-udio-digitaliza-es-pd-fs-e-documentos"
+                        >
+                          Deixe as notas mais úteis ao<br />adicionar texto,
+                          imagens, áudio,<br />digitalizações, PDFs e
+                          documentos.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-margin2">
+                    <div class="item3">
+                      <div class="heading-62">
+                        <div class="transforme-a-fazer-em-feito">
+                          TRANSFORME A FAZER EM<br />FEITO
+                        </div>
+                      </div>
+                      <div class="p-font-normal3">
+                        <div
+                          class="junte-suas-notas-tarefas-e-calend-rios-para-concluir-as-coisas-mais-facilmente"
+                        >
+                          Junte suas notas, tarefas e<br />calendários para
+                          concluir as coisas<br />mais facilmente.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-margin3">
+                    <div class="item3">
+                      <div class="heading-63">
+                        <div class="encontre-coisas-rapidamente">
+                          ENCONTRE COISAS<br />RAPIDAMENTE
+                        </div>
+                      </div>
+                      <div class="p-font-normal4">
+                        <div
+                          class="tenha-o-que-voc-precisa-quando-precisar-com-capacidades-de-pesquisa-poderosas-e-flex-veis"
+                        >
+                          Tenha o que você precisa, quando<br />precisar com
+                          capacidades de<br />pesquisa poderosas e flexíveis.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+
+
+
+
+        <div class="section2">
+          <div class="div-container4">
+            <div class="div-mb-12-margin">
+              <div class="div-mb-12">
+
+           
+              </div>
+            </div>
+
+
+
+
+
+            <div class="div-block">
+              <div class="carousel-container">
+                <div class="carousel-indicator">
+                  <span *ngFor="let slide of slides; let i = index" [class.active]="i === currentSlideId"></span>
+                </div>
+              
+                <div *ngFor="let slide of slides; let i = index" [hidden]="i !== currentSlideId">
+                  <img [src]="slide.src" alt="{{ slide.title }}" class="d-block w-100" loading="lazy" />
+                  <div class="carousel-caption">
+                    <h1>{{ slide.title }}</h1>
+                    <p>{{ slide.subtitle }}</p>
+                  </div>
+                </div>
+              
+                <div class="carousel-controls">
+                  <button (click)="prevSlide()" class="carousel-control">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button (click)="nextSlide()" class="carousel-control">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+              
+              
+              
+              
+              
+              
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+      
+        <div class="section">
+          <div class="div-container">
+            <div class="div-flex">
+              <div class="div-flex3">
+                <div class="figure5">
+                  <img
+                    class="_85-bc-0-cce-48-dd-4-ca-9-8-e-99-c-413170-b-6-f-9-a-go-paperless-en-webp"
+                    src="assets/img1.png"
+                  />
+                </div>
+              </div>
+              <div class="div-flex4">
+                <div
+                  class="figure-eaf-65-ace-c-1-e-6-4631-9095-25-fb-8141-ef-61-doc-scanning-svg"
+                >
+                  <div
+                    class="eaf-65-ace-c-1-e-6-4631-9095-25-fb-8141-ef-61-doc-scanning-svg-fill"
+                  >
+                    <div
+                      class="eaf-65-ace-c-1-e-6-4631-9095-25-fb-8141-ef-61-doc-scanning-svg"
+                    >
+                    
+                    </div>
+                  </div>
+                </div>
+                <div class="div-generic-wrapper-margin">
+                  <div class="div-generic-wrapper4">
+                    <div class="heading-32">
+                      <div class="seja-sem-papel">Seja sem papel</div>
+                    </div>
+                    <div class="p3">
+                      <div
+                        class="digitalize-documentos-importantes-e-deixe-os-m-o-em-todos-os-seus-dispositivos-salve-as-informa-es-n-o-a-bagun-a"
+                      >
+                        Digitalize documentos importantes e deixe-os à<br />mão
+                        em todos os seus dispositivos. Salve as<br />informações,
+                        não a bagunça.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+        
+        <div class="section">
+          <div class="div-container">
+            <div class="div-flex">
+              <div class="div-flex2">
+                <div
+                  class="figure-b-7089265-4634-4476-897-e-793-b-9-da-36-b-87-web-clipping-svg"
+                >
+                  <div
+                    class="b-7089265-4634-4476-897-e-793-b-9-da-36-b-87-web-clipping-svg-fill"
+                  >
+                    <div
+                      class="b-7089265-4634-4476-897-e-793-b-9-da-36-b-87-web-clipping-svg"
+                    >
+
+                    </div>
+                  </div>
+                </div>
+                <div class="div-generic-wrapper-margin">
+                  <div class="div-generic-wrapper4">
+                    <div class="heading-33">
+                      <div class="capture-a-web">Capture a web</div>
+                    </div>
+                    <div class="p4">
+                      <div
+                        class="salve-p-ginas-da-web-sem-as-propagandas-e-fa-a-marca-es-com-setas-destaques-e-texto-para-deix-las-mais-teis"
+                      >
+                        Salve páginas da web (sem as propagandas) e<br />faça
+                        marcações com setas, destaques e texto<br />para
+                        deixá-las mais úteis.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="div-margin3">
+                </div>
+              </div>
+              <div class="div-flex3">
+                <div class="figure5">
+                  <img
+                    class="_29-c-96913-3909-4131-8-b-2-a-8-ac-9590-bb-878-clip-the-web-en-webp"
+                    src="assets/img2.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+        <div class="section">
+          <div class="div-container">
+            <div class="div-flex">
+              <div class="div-flex3">
+                <div class="figure5">
+                  <img
+                    class="a-77-bfb-3-f-072-a-40-f-9-83-a-5-7446-b-86-b-6-e-35-feature-calendar-402-x-en-webp"
+                    src="assets/img3.png"
+                  />
+                </div>
+              </div>
+              <div class="div-flex4">
+                <div
+                  class="figure-1473-d-39-d-7902-4-f-26-81-ee-47-b-672464-a-61-calendar-icon-svg"
+                >
+                  <div
+                    class="_1473-d-39-d-7902-4-f-26-81-ee-47-b-672464-a-61-calendar-icon-svg-fill"
+                  >
+                    <div
+                      class="_1473-d-39-d-7902-4-f-26-81-ee-47-b-672464-a-61-calendar-icon-svg"
+                    >
+                  
+                    </div>
+                  </div>
+                </div>
+                <div class="div-generic-wrapper-margin">
+                  <div class="div-generic-wrapper3">
+                    <div class="heading-34">
+                      <div class="conecte-sua-google-agenda">
+                        Conecte sua Google Agenda
+                      </div>
+                    </div>
+                    <div class="p5">
+                      <div
+                        class="fa-a-com-que-seu-calend-rio-trabalhe-para-voc-suas-notas-e-reuni-es-possuem-contexto-para-que-nada-se-perca-no-caminho"
+                      >
+                        Faça com que seu calendário trabalhe para você.<br />Suas
+                        notas e reuniões possuem contexto, para<br />que nada
+                        se perca no caminho.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+      <div class="footer2">
+        <div class="div-container5">
+          <div class="div-w-full2">
+            <div
+              class="_832-b-0-b-66-7-adc-46-ea-bdb-5-80-c-2-e-4-b-7-e-38-d-tasks-logo-svg"
+            >
+              <div
+                class="_832-b-0-b-66-7-adc-46-ea-bdb-5-80-c-2-e-4-b-7-e-38-d-tasks-logo-svg-fill"
+              >
+                <div
+                  class="_832-b-0-b-66-7-adc-46-ea-bdb-5-80-c-2-e-4-b-7-e-38-d-tasks-logo-svg2"
+                >
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          
+          <div class="div-flex5">
+            <div class="div-w-56">
+              <div>
+                <div class="empresa" id="empresa">ENTRE EM CONTATO:</div>
+              </div>
+              <div class="list2">
+                <div class="item4">
+                  <div class="link3">
+                    <div class="sobre-a-empresa-bending">
+                      Sobre o projeto
+                    </div>
+                    <div class="spoons"></div>
+                  </div>
+                </div>
+                <div class="item-margin4">
+                  <div class="item5">
+                    <div class="link-carreiras">Carreira</div>
+                  </div>
+                </div>
+                <div class="item-margin4">
+                  <div class="item6">
+                    <div class="link-fale-conosco">Fale conosco</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          
+          <div class="div-mt-20">
+            <div class="div-flex6">
+              <div class="div-flex7"></div>
+              <div class="list3">
+                <div class="item7">
+                  <div class="link-svg">
+                    <svg
+                      class="group11"
+                      width="21"
+                      height="21"
+                      viewBox="0 0 21 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.0667 10.3867C20.0667 4.86387 15.5896 0.386719 10.0667 0.386719C4.5438 0.386719 0.0666504 4.86387 0.0666504 10.3867C0.0666504 15.3779 3.72349 19.515 8.50415 20.2652V13.2773H5.96509V10.3867H8.50415V8.1836C8.50415 5.67735 9.99712 4.29297 12.2812 4.29297C13.375 4.29297 14.5198 4.48828 14.5198 4.48828V6.94922H13.2589C12.0167 6.94922 11.6292 7.72012 11.6292 8.51172V10.3867H14.4026L13.9593 13.2773H11.6292V20.2652C16.4099 19.515 20.0667 15.3779 20.0667 10.3867Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="item-margin5">
+                  <div class="item-link-svg">
+                    <svg
+                      class="group12"
+                      width="21"
+                      height="17"
+                      viewBox="0 0 21 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.35845 16.5118C13.9038 16.5118 18.0319 10.2591 18.0319 4.83839C18.0319 4.66261 18.028 4.48292 18.0202 4.30714C18.8233 3.72639 19.5163 3.00705 20.0667 2.18292C19.3188 2.51568 18.5246 2.73299 17.7115 2.82746C18.5677 2.31427 19.2088 1.50807 19.5159 0.558308C18.7105 1.03564 17.8296 1.37235 16.9111 1.55402C16.2923 0.896478 15.4742 0.461108 14.5831 0.315218C13.692 0.169328 12.7777 0.321048 11.9815 0.746918C11.1853 1.17279 10.5515 1.8491 10.1782 2.67127C9.8049 3.49344 9.71284 4.41569 9.91626 5.29542C8.28539 5.21358 6.68993 4.78993 5.2333 4.05192C3.77667 3.31392 2.49139 2.27804 1.46079 1.01144C0.936983 1.91454 0.776697 2.98321 1.01251 4.00025C1.24832 5.01729 1.86254 5.90638 2.73032 6.48683C2.07884 6.46615 1.44163 6.29074 0.871338 5.97511V6.02589C0.870754 6.97363 1.1984 7.89233 1.79857 8.62582C2.39875 9.35932 3.23442 9.86232 4.16352 10.0493C3.56003 10.2144 2.92664 10.2385 2.31235 10.1196C2.57453 10.9347 3.08463 11.6476 3.77146 12.1588C4.45829 12.67 5.28758 12.954 6.1436 12.9712C4.69034 14.1127 2.89513 14.7319 1.04712 14.729C0.719389 14.7285 0.391983 14.7084 0.0666504 14.6688C1.94403 15.8733 4.12793 16.513 6.35845 16.5118Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </div>
+                </div>
+           
+                <div class="item-margin5">
+                  <div class="item-link-svg">
+                    <svg
+                      class="group13"
+                      width="21"
+                      height="21"
+                      viewBox="0 0 21 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.0667 2.1875C12.7386 2.1875 13.055 2.19922 14.1058 2.24609C15.0823 2.28906 15.6097 2.45313 15.9612 2.58985C16.4261 2.76953 16.7619 2.98828 17.1096 3.33594C17.4611 3.6875 17.6761 4.01953 17.8558 4.48438C17.9925 4.83594 18.1564 5.36719 18.1994 6.33985C18.2463 7.39453 18.2581 7.71094 18.2581 10.3789C18.2581 13.0508 18.2463 13.3672 18.1994 14.418C18.1564 15.3945 17.9925 15.9219 17.8558 16.2734C17.6761 16.7383 17.4572 17.0742 17.1096 17.4219C16.758 17.7734 16.4261 17.9883 15.9612 18.168C15.6097 18.3047 15.0784 18.4687 14.1058 18.5117C13.0511 18.5586 12.7347 18.5703 10.0667 18.5703C7.39478 18.5703 7.07837 18.5586 6.02759 18.5117C5.05103 18.4687 4.52368 18.3047 4.17212 18.168C3.70728 17.9883 3.37134 17.7695 3.02368 17.4219C2.67212 17.0703 2.45728 16.7383 2.27759 16.2734C2.14087 15.9219 1.97681 15.3906 1.93384 14.418C1.88696 13.3633 1.87524 13.0469 1.87524 10.3789C1.87524 7.70703 1.88696 7.39063 1.93384 6.33985C1.97681 5.36328 2.14087 4.83594 2.27759 4.48438C2.45728 4.01953 2.67603 3.6836 3.02368 3.33594C3.37524 2.98438 3.70728 2.76953 4.17212 2.58985C4.52368 2.45313 5.05493 2.28906 6.02759 2.24609C7.07837 2.19922 7.39478 2.1875 10.0667 2.1875ZM10.0667 0.386719C7.35181 0.386719 7.01196 0.398437 5.94556 0.445313C4.88306 0.492188 4.15259 0.664063 3.51978 0.910156C2.85962 1.16797 2.30103 1.50781 1.74634 2.06641C1.18774 2.6211 0.8479 3.17969 0.590088 3.83594C0.343994 4.47266 0.172119 5.19922 0.125244 6.26172C0.0783692 7.33203 0.0666504 7.67188 0.0666504 10.3867C0.0666504 13.1015 0.0783692 13.4414 0.125244 14.5078C0.172119 15.5703 0.343994 16.3008 0.590088 16.9336C0.8479 17.5937 1.18774 18.1523 1.74634 18.707C2.30103 19.2617 2.85962 19.6055 3.51587 19.8594C4.15259 20.1055 4.87915 20.2773 5.94165 20.3242C7.00806 20.3711 7.3479 20.3828 10.0627 20.3828C12.7776 20.3828 13.1175 20.3711 14.1839 20.3242C15.2464 20.2773 15.9768 20.1055 16.6096 19.8594C17.2658 19.6055 17.8245 19.2617 18.3792 18.707C18.9339 18.1523 19.2776 17.5937 19.5315 16.9375C19.7776 16.3008 19.9495 15.5742 19.9964 14.5117C20.0433 13.4453 20.055 13.1055 20.055 10.3906C20.055 7.67578 20.0433 7.33594 19.9964 6.26953C19.9495 5.20703 19.7776 4.47656 19.5315 3.84375C19.2855 3.17969 18.9455 2.6211 18.3869 2.06641C17.8322 1.51172 17.2737 1.16797 16.6175 0.914063C15.9808 0.667969 15.2542 0.496094 14.1917 0.449219C13.1214 0.398438 12.7815 0.386719 10.0667 0.386719Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M10.0667 5.25C7.23071 5.25 4.92993 7.55078 4.92993 10.3867C4.92993 13.2226 7.23071 15.5234 10.0667 15.5234C12.9026 15.5234 15.2034 13.2226 15.2034 10.3867C15.2034 7.55078 12.9026 5.25 10.0667 5.25ZM10.0667 13.7187C8.22681 13.7187 6.73462 12.2265 6.73462 10.3867C6.73462 8.54688 8.22681 7.05469 10.0667 7.05469C11.9065 7.05469 13.3987 8.54688 13.3987 10.3867C13.3987 12.2265 11.9065 13.7187 10.0667 13.7187Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M16.6058 5.04688C16.6058 5.71094 16.0667 6.2461 15.4065 6.2461C14.7425 6.2461 14.2073 5.70703 14.2073 5.04688C14.2073 4.38281 14.7464 3.84766 15.4065 3.84766C16.0667 3.84766 16.6058 4.38672 16.6058 5.04688Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="item-margin5">
+                  <svg
+                    class="item-link-svg3"
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_16_1257)">
+                      <path
+                        d="M19.8675 6.38672C19.8675 6.38672 19.6722 5.00781 19.0706 4.40235C18.3089 3.60547 17.4573 3.60156 17.0667 3.55469C14.2698 3.35156 10.0705 3.35156 10.0705 3.35156H10.0627C10.0627 3.35156 5.86352 3.35156 3.06665 3.55469C2.67603 3.60156 1.82446 3.60547 1.06274 4.40235C0.461181 5.00781 0.269775 6.38672 0.269775 6.38672C0.269775 6.38672 0.0666504 8.00781 0.0666504 9.625V11.1406C0.0666504 12.7578 0.265869 14.3789 0.265869 14.3789C0.265869 14.3789 0.461181 15.7578 1.05884 16.3633C1.82056 17.1601 2.82056 17.1328 3.26587 17.2187C4.86743 17.3711 10.0667 17.418 10.0667 17.418C10.0667 17.418 14.2698 17.4101 17.0667 17.2109C17.4573 17.164 18.3089 17.1601 19.0706 16.3633C19.6722 15.7578 19.8675 14.3789 19.8675 14.3789C19.8675 14.3789 20.0667 12.7617 20.0667 11.1406V9.625C20.0667 8.00781 19.8675 6.38672 19.8675 6.38672ZM8.00024 12.9805V7.35938L13.4026 10.1797L8.00024 12.9805Z"
+                        fill="black"
+                      />
+                    </g>
+                    <defs>
+                      <clippath id="clip0_16_1257">
+                        <rect
+                          width="20"
+                          height="20"
+                          fill="white"
+                          transform="translate(0.0666504 0.386719)"
+                        />
+                      </clippath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            
+            <div class="div-flex9">
+              <div class="span-font-light">
+                <div
+                  class="_2023-tasks-corporation-todos-os-direitos-reservados"
+                >
+                  © 2023 Ítalo Gonçalves M. Faria.
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
